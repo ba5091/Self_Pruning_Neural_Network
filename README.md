@@ -144,6 +144,11 @@ This suggests that:
 * Most intermediate representations are redundant
 * Final layer retains critical decision boundaries
 
+ ### 5. Lambda Scheduling
+ Lambda scheduling was necessary for stable pruning;
+ fixed lambda values resulted in either no sparsity or model collapse.
+
+
 ---
 
 ## Challenges and Debugging
