@@ -45,9 +45,7 @@ If g is small, the corresponding connection contributes very little and is effec
 
 ## Loss Function
 
-[
-\text{Total Loss} = \text{CrossEntropyLoss} + \lambda \cdot | w \times g |_1
-]
+Total Loss = CrossEntropyLoss + λ · ||w · g||₁
 
 ### Key Design Choice
 
