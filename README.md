@@ -22,19 +22,16 @@ This project explores **in-training pruning**, where the model learns to identif
 
 ## Core Idea
 
-Each weight ( w ) is paired with a learnable gate ( g ):
+Each weight **w** is paired with a learnable gate **g**:
 
-[
-\text{Effective Weight} = w \times g
-]
+Effective Weight = w × g
 
 Where:
 
-* ( g = \sigma(\text{gate_scores}) )
-* ( g \in (0,1) )
+- g = sigmoid(gate_scores)
+- g ∈ (0, 1)
 
-If ( g ) is small, the corresponding connection contributes very little and is effectively pruned.
-
+If g is small, the corresponding connection contributes very little and is effectively pruned.
 ---
 
 ## Architecture
